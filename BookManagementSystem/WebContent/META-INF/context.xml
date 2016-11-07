@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!-- Default set of monitored resources -->
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+	<Resource type="javax.sql.DataSource" name="jdbc/mySQLDB" auth="Container"
+		username="GABjQuery" password="GABjQuery" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/library?characterEncoding=UTF-8" />
+</Context>
