@@ -35,9 +35,7 @@ public class UserSessionServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(true);
 		String callback = request.getParameter("callback");
-		JSONObject result = new JSONObject();
-		result.put("id", session.getAttribute("id"));
-		System.out.println("id.." + session.getAttribute("id"));
+		String result = (String) session.getAttribute("id");
 		// 3. 출력처리
 		response.setContentType("text/plain; charset=utf8");
 		PrintWriter out = response.getWriter();
